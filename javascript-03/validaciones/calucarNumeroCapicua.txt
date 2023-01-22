@@ -1,0 +1,6 @@
+calcular capicua:
+capicuanumero(numero)
+
+let numero = numero.toString()
+
+return numero.split("").reverse.join("")===numero;

@@ -1,0 +1,16 @@
+solo letras:
+document.formulario.direccion.onkeypress = soloLetras;
+
+function soloLetras(elevento) {
+    let evento = elevento || window.event;
+
+    let soloLetra = new RegExp("^[a-z]$", "i");
+    let caracterPulsado = String.fromCharCode(evento.charCode);
+    let mostrar = true;
+
+    if (!soloLetra.test(caracterPulsado)) {
+        mostrar = false;
+    }
+    return mostrar;
+
+}

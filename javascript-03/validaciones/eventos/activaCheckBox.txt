@@ -1,0 +1,17 @@
+activar checkBox____ 
+
+function activarCheckBox() {
+    let sector = document.formulario.sector;
+    if (document.formulario.sectorEconomico.value == "si") {
+        for (let i = 0; i < sector.length; i++) {
+            sector[i].disabled = false;
+        }
+        console.log("si");
+    } else if (document.formulario.sectorEconomico.value == "no") {
+        for (let i = 0; i < sector.length; i++) {
+            sector[i].disabled = true;
+
+        }
+        console.log("no");
+    }
+}

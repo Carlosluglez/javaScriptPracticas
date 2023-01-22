@@ -1,0 +1,16 @@
+:root{
+	background-color:blue;
+	color:white;
+	font-size:14pt;
+	font-family:"Comic Sans MS";
+	line-height:2rem;
+	margin-top:5%;
+	margin-left:10%;
+}
+label+input {
+	left:2%;
+}
+input {
+	font-size:14pt;
+	font-family:"Calibri";
+}

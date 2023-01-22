@@ -1,0 +1,30 @@
+validacion url en regex
+	 let regExp = new RegExp("((^http:\/\/)|^(https:\/\/)|^(www.){1}?)([a-z][a-z1-9-]*[a-z1-9]).[a-z]{2,4}$","i");
+	 let regExp=/((^http:\/\/)|^(https:\/\/)|^(www.){1}?)([a-z][a-z1-9-]*[a-z1-9]).[a-z]{2,4}$/i;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

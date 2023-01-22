@@ -1,0 +1,15 @@
+evento onchange
+
+// document.formulario.comunidades.onchange = cambiarCajaPrueba;
+
+function cambiarCajaPrueba() {
+    // formulario.select.options[formulario.select.selectedIndex].propiedad
+    let comunidades = document.formulario.comunidades.options;
+    //comunidades.selectedIndex devuelve un el valor del indice seleccionado, com value cogemos su valor y ya lo comparamos con la palabra buscada
+    let elementoElegido = document.formulario.comunidades[comunidades.selectedIndex].value;
+    if (elementoElegido == "Melilla") {
+        document.formulario.prueba.disabled = false;
+    } else {
+        document.formulario.prueba.disabled = true;
+    }
+}

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title> Reto_4 </title>
+    <meta charset="utf-8" />
+    <meta name="author" content="tu nombre" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript" src="js/listaDefinicion2.js"></script>
+    <script type="text/javascript" src="js/listaProvincia.js"></script>
+    <script type="text/javascript" src="js/coches.js"></script>
+    <script type="text/javascript" src="js/comunidades.js"></script>
+    <script type="text/javascript" src="js/anadirMensaje.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div id="grid-container">
+
+        <dialog id="dialogo">
+            <!--formulario modal aparece al hacer click en boton registrar -->
+            <form id="formu">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" value="" /> <br />
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contrasena" value="" /> <br />
+                <input type="button" id="aceptar" value="Aceptar" />
+                <input type="button" id="cancelar" value="Cancelar" />
+            </form>
+        </dialog>
+
+        <dialog id="dialogo1">
+            <!--formulario modal aparece al hacer click en boton registrar -->
+            <form id="formu1">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre1" value="" /> <br />
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contrasena1" value="" /> <br />
+                <input type="button" id="aceptar1" value="Aceptar" />
+                <input type="button" id="cancelar1" value="Cancelar" />
+            </form>
+        </dialog>
+
+
+
+        <div id="one">
+            <form action="" id="usuario">
+                <div id="usuarios_div">
+                    <p id="usuario">Usuario </p>
+                    <p id="usuario_activo"> </p>
+                </div>
+                <br>
+
+                <input type="button" id="registro" value="Registrarse">
+                <input type="button" id="entrar" value="Entrar">
+            </form>
+        </div>
+
+
+        <div id="two">
+            <form id="definiciones" action="" method="POST" name="formulario">
+                <h3>Deficiniciones</h3>
+                <label for="palabra">Palabra</label>
+                <input id="palabra" type="text" name="palabra">
+                <br>
+                <label for="concepto">Concepto</label>
+                <input id="concepto" type="text" name="concepto"><br>
+                <input type="button" id="boton_definicion" value="Añadir Definición">
+                <br><br>
+                <p>Lista de Definiciones</p>
+                <div id="listaDefinicion">
+                    <dl id="listadef">
+
+                    </dl>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="three">
+            <form>
+                <h3>Listado de Coches</h3>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca"><br>
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo"><br>
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" id="precio"><br>
+                <input type="button" id="boton_coche" value="Añadir Coche">
+                <table border="1" id="table">
+                    <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+        <div id="four">
+            <form>
+                <h3>Nombres de Localidades </h3>
+                <label for="localidad">Localidad</label>
+                <input type="text" name="localidad" id="localidad"> <br>
+                <input type="button" id="boton_localidad" value="Añadir Loacalidad">
+                <div id="listaDesordenada">
+                    <ul id="listaLocalidades">
+
+                    </ul>
+
+                </div>
+            </form>
+        </div>
+
+        <div id="five">
+            <form action="">
+                <h3>Comunidades Autónomas</h3>
+                <select name="comunidades" id="comunidades">
+                    <option value="andalucia"></option>
+                    <option value="andalucia">Andalucía</option>
+                    <option value="Aragon">Aragón</option>
+                    <option value="Principado_de_Asturias">Principado de Asturias</option>
+                    <option value="Islas_Baleares">Islas Baleares</option>
+                    <option value="Pai­s_Vasco">Paí­s Vasco</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castilla_La_Mancha">Castilla-La Mancha</option>
+                    <option value="Castilla_León">Castilla y León</option>
+                    <option value="Cataluña">Cataluña</option>
+                    <option value="Extremadura">Extremadura</option>
+                    <option value="Galicia">Galicia</option>
+                    <option value="Comunidad_de_Madrid">Comunidad de Madrid</option>
+                    <option value="Región_de_Murcia">Región de Murcia</option>
+                    <option value="Comunidad_Foral_de_Navarra">Comunidad Foral de Navarra</option>
+                    <option value="La_Rioja">La Rioja</option>
+                    <option value="Comunidad_Valenciana">Comunidad Valenciana</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Melilla">Melilla</option>
+                </select>
+                <select name="provincias" id="provincias">
+                    <option value=""></option>
+                    <option value="Álava/Araba" class="Pai­s_Vasco">Álava/Araba</option>
+                    <option value="Albacete" class="Castilla_La_Mancha">Albacete</option>
+                    <option value="Alicante" class="Comunidad_Valenciana">Alicante</option>
+                    <option value="Almería" class="andalucia">Almería</option>
+                    <option value="Asturias" class="Principado_de_Asturias">Asturias</option>
+                    <option value="Ávila" class="Castilla_León">Ávila</option>
+                    <option value="Badajoz" class="Extremadura">Badajoz</option>
+                    <option value="Islas_Baleares" class="Islas_Baleares">Baleares</option>
+                    <option value="Barcelona" class="Cataluña">Barcelona</option>
+                    <option value="Burgos" class="Castilla_León">Burgos</option>
+                    <option value="Cáceres" class="Extremadura">Cáceres</option>
+                    <option value="Cádiz" class="andalucia">Cádiz</option>
+                    <option value="Cantabria" class="Cantabria">Cantabria</option>
+                    <option value="Castellón" class="Comunidad_Valenciana">Castellón</option>
+                    <option value="Ceuta" class="Ceuta">Ceuta</option>
+                    <option value="Ciudad Real" class="Castilla_La_Mancha">Ciudad Real</option>
+                    <option value="Córdoba" class="andalucia">Córdoba</option>
+                    <option value="Cuenca" class="Castilla_La_Mancha">Cuenca</option>
+                    <option value="Gerona/Girona" class="Cataluña">Gerona/Girona</option>
+                    <option value="Granada" class="andalucia">Granada</option>
+                    <option value="Guadalajara" class="Castilla_La_Mancha">Guadalajara</option>
+                    <option value="Guipúzcoa/Gipuzkoa" class="Pai­s_Vasco">Guipúzcoa/Gipuzkoa</option>
+                    <option value="Huelva" class="andalucia">Huelva</option>
+                    <option value="Huesca" class="Aragon">Huesca</option>
+                    <option value="Jaén" class="andalucia">Jaén</option>
+                    <option value="La Coruña/A Coruña" class="Galicia">La Coruña/A Coruña</option>
+                    <option value="La Rioja" class="La_Rioja">La Rioja</option>
+                    <option value="Las Palmas" class="Canarias">Las Palmas</option>
+                    <option value="León" class="Castilla_León">León</option>
+                    <option value="Lérida/Lleida" class="Cataluña">Lérida/Lleida</option>
+                    <option value="Lugo" class="Galicia">Lugo</option>
+                    <option value="Madrid" class="Comunidad_de_Madrid">Madrid</option>
+                    <option value="Málaga" class="andalucia">Málaga</option>
+                    <option value="Melilla" class="Melilla">Melilla</option>
+                    <option value="Murcia" class="Región_de_Murcia">Murcia</option>
+                    <option value="Navarra" class="Comunidad_Foral_de_Navarra">Navarra</option>
+                    <option value="Orense/Ourense" class="Galicia">Orense/Ourense</option>
+                    <option value="Palencia" class="Castilla_León">Palencia</option>
+                    <option value="Pontevedra" class="Galicia">Pontevedra</option>
+                    <option value="Salamanca" class="Castilla_León">Salamanca</option>
+                    <option value="Segovia" class="Castilla_León">Segovia</option>
+                    <option value="Sevilla" class="andalucia">Sevilla</option>
+                    <option value="Soria" class="Castilla_León">Soria</option>
+                    <option value="Tarragona" class="Cataluña">Tarragona</option>
+                    <option value="Tenerife" class="Canarias">Tenerife</option>
+                    <option value="Teruel" class="Aragon">Teruel</option>
+                    <option value="Toledo" class="Castilla_La_Mancha">Toledo</option>
+                    <option value="Valencia" class="Comunidad_Valenciana">Valencia</option>
+                    <option value="Valladolid" class="Castilla_León">Valladolid</option>
+                    <option value="Vizcaya/Bizkaia" class="Pai­s_Vasco">Vizcaya/Bizkaia</option>
+                    <option value="Zamora" class="Castilla_León">Zamora</option>
+                    <option value="Zaragoza" class="Aragon">Zaragoza</option>
+
+                </select>
+                <div id="parrafos">
+                    <p id="mostrar_parrafo"></p>
+                    <p class="andalucia" style="visibility:hidden;">Tierra flamenca</p>
+                    <p class="Aragon" style="visibility:hidden ;">escalar</p>
+                    <p class="Principado_de_Asturias" style="visibility:hidden ;">osos y sidra</p>
+                    <p class="Islas_Baleares" style="visibility:hidden ;">pilotes </p>
+                    <p class="Pai­s_Vasco" style="visibility:hidden ;">vascos</p>
+                    <p class="Canarias" style="visibility:hidden ;">muyayo</p>
+                    <p class="Cantabria" style="visibility:hidden ;">anchoas</p>
+                    <p class="Castilla_La_Mancha" style="visibility:hidden ;">queso</p>
+                    <p class="Castilla_León" style="visibility:hidden ;">buena gente</p>
+                    <p class="Cataluña" style="visibility:hidden ;">diferente</p>
+                    <p class="Extremadura" style="visibility:hidden ;">acho</p>
+                    <p class="Galicia" style="visibility:hidden ;">puede que si o puede que no</p>
+                    <p class="Comunidad_de_Madrid" style="visibility:hidden ;">chulos</p>
+                    <p class="Región_de_Murcia" style="visibility:hidden ;">acho pijo</p>
+                    <p class="Comunidad_Foral_de_Navarra" style="visibility:hidden ;">1 de enero.2 de febrero.</p>
+                    <p class="La_Rioja" style="visibility:hidden ;">La_Rioja</p>
+                    <p class="Comunidad_Valenciana" style="visibility:hidden ;">nano</p>
+                    <p class="Ceuta" style="visibility:hidden ;">rubios</p>
+                    <p class="Melilla" style="visibility:hidden ;">morenos</p>
+
+                </div>
+
+
+            </form>
+        </div>
+        <div id="six">
+            <form id="mensajes">
+                <h3>Mensajes</h3>
+                <input type="button" id="boton_mensaje" value="Añadir mensaje">
+            </form>
+        </div>
+    </div>
+    <div id="cajaMensaje">
+        
+
+    </div>
+    <dialog id="dialogoSms">
+
+        <form id="chat">
+            <label for="nombre">Título</label>
+            <input type="text" id="titulo" value=""/> <br />
+            <label for="contraseña">Comentario</label>
+            <input type="text" id="comentario" value=""/> <br />
+
+            <input type="radio" name="icono" id="img1" value="imagenes/acrobacia.jpg"><img src="imagenes/acrobacia.jpg"><br>
+            <input type="radio" name="icono" id="img2" value="imagenes/guitarra.png"><img src="imagenes/guitarra.png"><br>
+            <input type="radio" name="icono" id="img3" value="imagenes/iconoEscalada.png"><img src="imagenes/iconoEscalada.png"><br>
+            <input type="radio" name="icono" id="img4" value="imagenes/ordenador.png"><img src="imagenes/ordenador.png"><br>
+            <input type="radio" name="icono" id="img5" value="imagenes/php.png"><img src="imagenes/php.png"><br>
+            <input type="radio" name="icono" id="img6" value="imagenes/psicologia.png"><img src="imagenes/psicologia.png"><br>
+
+            <input type="button" id="crearMensaje" value="Aceptar" />
+            <input type="button" id="cancelarMensaje" value="Cancelar" />
+        </form>
+    </dialog>
+
+</body>
+
+</html>

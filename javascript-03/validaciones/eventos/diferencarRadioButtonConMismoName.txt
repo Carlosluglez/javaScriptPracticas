@@ -1,0 +1,3 @@
+diferenciar entre radioButtons con mismo name="";
+ 	// document.formulario.sectorEconomico[0].onclick = activarCheckBox;
+    // document.formulario.sectorEconomico[1].onclick = activarCheckBox;

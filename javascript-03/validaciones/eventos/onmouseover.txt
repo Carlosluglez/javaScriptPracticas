@@ -1,0 +1,19 @@
+ document.formulario.razon.onmouseover = fondoAzul;
+
+function fondoAzul(elevento) {
+
+    let evento = elevento || window.event;
+    evento.target.style.background = "blue";
+    evento.target.style.color = "white";
+
+
+}
+
+document.formulario.razon.onmouseout = fondoBlanco;
+
+function fondoBlanco(elevento) {
+    let evento = elevento || window.event;
+
+    evento.target.style.background = "white";
+    evento.target.style.color = "black";
+}

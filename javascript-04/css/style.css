@@ -1,0 +1,120 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* body {
+  
+    /* border: 4px dashed red;  */
+  /* background-color: blue;
+  color: white; */
+
+ body
+{
+  width: 800px;
+	height: 100%;
+  background-color: blue;
+  color: white;
+}
+th {
+  width: 120px;
+}
+
+input {
+  margin: 5px;
+}
+
+p {
+  size: 10px;
+}
+
+#one {
+  color: yellow;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 100px 500px 500px;
+}
+
+#one {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-right: 10px;
+}
+
+#usuario {
+  text-align: right;
+}
+
+#two {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#three {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#four {
+  grid-column: 2/3;
+  grid-row: 2/3
+}
+
+#five {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#six {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#usuario_activo{
+  font-weight: 1000;
+  
+}
+
+#nombreUsuarioActivo{
+  background-color: blue;
+  color:yellow; 
+  border: none;
+  /* visibility: hidden; */
+
+}
+
+img{
+
+  width: 20px;
+  height: 20px;
+  
+}
+#dialogoSms{
+
+  top: 50%;
+ right: 20%;
+}
+
+#cajaMensaje div{
+  border:solid 1px black;
+}
+
+
+#usuario_activo{
+  margin-left: 5px;
+}
+
+
+
+#usuarios_div {
+  display: flex;
+  width: fit-content;
+  margin-left: 68%;
+}
+
+#provincias option{
+  display: none;
+}
