@@ -1,2 +1,0 @@
-validar mail
- let regExp = /^([a-zA-Z0-9][\w.]*)@([a-z]+).([a-z]{2,4}).?([a-z]{2,3})$/;
